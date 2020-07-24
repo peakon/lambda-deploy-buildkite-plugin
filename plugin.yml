@@ -1,6 +1,6 @@
 name: Lambda Deployer
 description: Deploy Lambda Code
-author: https://github.com/envato
+author: https://github.com/peakon
 requirements: []
 configuration:
   properties:
@@ -13,6 +13,8 @@ configuration:
     s3_bucket:
       type: string
     s3_key:
+      type: string
+    region:
       type: string
   required:
     - function_name
