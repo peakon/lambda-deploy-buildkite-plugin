@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run shellcheck
-      run: docker-compose run --rm shellcheck hooks/**
+      run: docker-compose run --rm shell_check hooks/**
     - name: Run tests
       run: docker-compose run --rm tests
     - name: Run lint
